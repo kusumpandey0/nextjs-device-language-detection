@@ -1,0 +1,20 @@
+{
+  "english": {
+    "title": "Download Our App",
+    "description": "Experience the next generation of our platform. Get the best features and performance by installing our mobile app today.",
+    "detected": "Detected Device",
+    "lang": "Preferred Language"
+  },
+  "bengali": {
+    "title": "আমাদের অ্যাপ ডাউনলোড করুন",
+    "description": "আমাদের প্ল্যাটফর্মের পরবর্তী প্রজন্মের অভিজ্ঞতা নিন। আজই আমাদের মোবাইল অ্যাপ ইনস্টল করে সেরা বৈশিষ্ট্য এবং পারফরম্যান্স পান।",
+    "detected": "শনাক্ত ডিভাইস",
+    "lang": "পছন্দের ভাষা"
+  },
+  "german": {
+    "title": "Laden Sie unsere App herunter",
+    "description": "Erleben Sie die nächste Generation unserer Plattform. Sichern Sie sich die besten Funktionen und Leistungen, indem Sie noch heute unsere mobile App installieren.",
+    "detected": "Erkanntes Gerät",
+    "lang": "Bevorzugte Sprache"
+  }
+}
