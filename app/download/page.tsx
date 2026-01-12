@@ -44,7 +44,6 @@ export default function Download() {
     "english"
   );
   const [loading, setLoading] = useState(true);
-  const [noShow,setNoShow]=useState(true);
   //re-renders automatically when language changes
   const t = translations[language];
   useEffect(() => {
@@ -52,17 +51,9 @@ export default function Download() {
       setLanguage(detectLanguage(navigator.language));
       setLoading(false);
   }, []);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setNoShow(false);
-    }, 2000); // 2 seconds
-
-    // cleanup to avoid memory leaks
-    return () => clearTimeout(timer);
-  }, []);
   return (
     <main className="min-h-screen flex items-center justify-center p-4 md:p-8">
-      {noShow?(<p>loading...</p>):(      <section className="glass-card max-w-lg w-full rounded-3xl p-8 md:p-12 text-center fade-in">
+      <section className="glass-card max-w-lg w-full rounded-3xl p-8 md:p-12 text-center fade-in">
         <h1 className="text-3xl md:text-4xl font-extrabold mb-4 tracking-tight">
           {t.title}
         </h1>
@@ -142,7 +133,7 @@ export default function Download() {
             </p>
           </div>
         </div>
-      </section>)}
+      </section>
 
     </main>
   );
